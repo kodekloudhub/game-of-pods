@@ -1,0 +1,30 @@
+# kubectl create deployment redis-deployment --image=redis:alpine --dry-run -oyaml -n vote > redis-deployment.yaml
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: redis-deployment
+  name: redis-deployment
+  namespace: vote
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: redis-deployment
+  template:
+    metadata:
+      labels:
+        app: redis-deployment
+    spec:
+      containers:
+      - image: redis:alpine
+        name: redis-deployment
+        volumeMounts:
+        - mountPath: /data
+          name: redis-data
+      volumes:
+      - name: redis-data
+        emptyDir: {}
+

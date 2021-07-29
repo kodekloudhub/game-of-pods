@@ -1,0 +1,25 @@
+# kubectl create deployment vote-deployment --image=kodekloud/examplevotingapp_vote:before -n vote --dry-run -oyaml > deploy.yaml
+# Edit the container name, it won't take underscore in container name
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: vote-deployment
+  name: vote-deployment
+  namespace: vote
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: vote-deployment
+  template:
+    metadata:
+      labels:
+        app: vote-deployment
+    spec:
+      containers:
+      - image: kodekloud/examplevotingapp_vote:before
+        name: examplevotingapp-vote
+

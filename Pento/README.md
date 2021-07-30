@@ -1,4 +1,7 @@
-### Pento Broken Server
+# [Pento Broken Server](https://kodekloud.com/lessons/pento/)
+
+- Let's take a tour of [Solution Video](https://kodekloud.com/lessons/2-solution-troubleshooting-nodes-and-deploying-file-server/).
+
 
 > Note: -
 

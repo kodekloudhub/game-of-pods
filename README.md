@@ -1,6 +1,6 @@
 # [Game of Pods](https://kodekloud.com/courses/game-of-pods/)
 
-These are exciting and challenging challenges from the __[Game of Pods (GOP)](https://kodekloud.com/courses/game-of-pods/)__ hosted on **KodeKloud** platform. Which is available free of cost. 
+These are fun and exciting Kubernetes challenges from the __[Game of Pods (GOP)](https://kodekloud.com/courses/game-of-pods/)__ hosted on **KodeKloud** platform available for free. 
 
 
 # Sections
